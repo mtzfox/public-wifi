@@ -8,6 +8,8 @@ body {
   padding: 0;
 }
 
+
+
 h1,
 h2,
 h3,
@@ -22,7 +24,6 @@ a {
   height: 90vh;
   width: 90vw;
   margin: 5vh auto;
-  border: 1px solid #44546a;
   max-width: 1000px;
   min-width: 300px;
   background: #fff;
@@ -130,7 +131,7 @@ form label.agree-checkbox {
   display: inline-block;
 }
 
-.button {
+#join a.button {
   background-color: #1f3864;
   color: #fff;
   text-decoration: none;
@@ -138,13 +139,13 @@ form label.agree-checkbox {
   -moz-border-radius: 5px;
   display: block;
   margin: 2em 0.5em;
-  padding: 0.7em 0.5em;
+  padding: 0.7em 0em;
   width: 85%;
   text-align: center;
   font-size: 1.5em;
   border: none;
 }
-.button:hover {
+#join a.button:hover {
   filter: opacity(85%);
 }
 
@@ -156,33 +157,34 @@ form label.agree-checkbox {
 }
 
 #join a {
-  color: #445468;
+  color: #1f3864;
 }
 #join form {
   margin-top: 5%;
 }
 
-.terms {
-  width: 80%;
+#terms {
   margin: 0 auto;
   position: relative;
   z-index: 5;
-}
-.terms .scroll-box {
-  height: 50%;
-  scroll-behavior: smooth;
-  overflow-y: scroll;
-  border: 1px solid #ccc;
-  padding: 1.5em 1.2em;
-  margin: 2vh auto 0;
+  width: 90%;
+  height: 150px;
+  overflow-y: auto;
+  padding: 0.5em 1em;
+  margin: 2em auto 0;
   background-color: #e7e7e7;
   text-align: left;
   box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.09) inset;
   -webkit-box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.09) inset;
   -moz-box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.09) inset;
-}
-iframe > html {
   overflow-wrap: break-word;
+  scroll-behavior: smooth;
+  border: 1px solid #ccc;
+}
+#terms .scroll-box {
+  font-size: 0.6em;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 2em;
 }
 
 
@@ -234,11 +236,11 @@ iframe > html {
   .left-col {
     flex: 1 1 100%;
   }
-  .button {
+  #join a.button {
     width: 100%;
     margin: 10% auto;
     font-size: 2em;
-    padding: 8px 4px;
+    padding: 8px 0;
   }
   form label.agree-checkbox {
     width: 85%;
@@ -248,14 +250,10 @@ iframe > html {
     align-self: flex-end;
     width: 100%;
   }
-  .terms {
+  #terms {
     top: 0;
-    width: 100%;
-    height: 20%;
-  }
-  .terms .scroll-box {
-    height: 200px;
     width: 90%;
+    height: 200px;
   }
 }
 
@@ -303,7 +301,7 @@ iframe > html {
     font-size: 3.5em;
   }
   h1 span {
-    display: inline;
+    display: inline-block;
   }
   .left-col {
     flex: 2 1 50%;
@@ -314,13 +312,12 @@ iframe > html {
   .logo img {
     width: 60%;
   }
-  .terms {
+  #terms {
     top: 0;
     width: 100%;
   }
-  .terms .scroll-box {
+  #terms .scroll-box {
     height: 200px;
-    width: 90%;
   }
 }
 
@@ -354,7 +351,7 @@ iframe > html {
     font-size: 3.4em;
   }
   h1 span {
-    display: inline-block;
+    display: block;
   }
   #join {
     max-width: 330px;
@@ -395,8 +392,8 @@ iframe > html {
     top: 95%;
     right: 2%;
   }
-  .button {
-    padding: 0.3em 0.3em;
+  #join a.button {
+    padding: 0.5em 0;
     margin: 1em 0;
     width: 90%;
     text-align: center;
@@ -408,12 +405,9 @@ iframe > html {
     width: 80%;
     display: inline-block;
   }
-  .terms {
-    width: 100%;
+  #terms {
+    width: 85%;
     margin: 5% 0;
-  }
-  .terms .scroll-box {
-    height: 10em;
   }
 }
 
@@ -464,17 +458,16 @@ iframe > html {
     flex: 1 1 100%;
     align-self: center;
   }
-  .terms {
+  #terms {
     width: 100%;
     margin: 5% auto;
   }
-  .terms .scroll-box {
+  #terms .scroll-box {
     height: 150px;
   }
-  .button {
+  #join a.button {
     width: 100%;
     margin: 10% auto;
     font-size: 2em;
-    padding: 8px 4px;
   }
 }
