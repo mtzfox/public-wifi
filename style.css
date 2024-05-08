@@ -1,0 +1,480 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+body {
+  color: #1f3864;
+  font-size: 12px;
+  line-height: 1.15em;
+  margin: 5vh 5vw;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+p,
+a {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+
+#content {
+  box-sizing: border-box;
+  height: 90vh;
+  width: 90vw;
+  margin: 5vh auto;
+  border: 1px solid #44546a;
+  max-width: 1000px;
+  min-width: 300px;
+  background: #fff;
+  text-align: left;
+  font-size: 12px;
+}
+#background {
+  box-sizing: content-box;
+  position: relative;
+  margin: 0 auto;
+  height: 75vh;
+  z-index: 1;
+}
+
+#background > .wifi-icon {
+  background: url("https://www.cityofboise.org/media/18679/wifi-icon-yellow-large.png")
+    center/contain no-repeat;
+  top: 0%;
+  left: 55%;
+  position: absolute;
+  z-index: 5;
+}
+#cloud {
+  background: url("https://www.cityofboise.org/media/18680/cloud-icon.png")
+    center/cover no-repeat;
+  width: 20%;
+  height: 20%;
+  position: absolute;
+  background-size: contain;
+  z-index: 1;
+}
+
+#cloud.one {
+  left: 35%;
+  top: 0px;
+}
+#cloud.two {
+  right: 2%;
+  top: 10%;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+#cloud.three {
+  width: 30%;
+  top: 85%;
+  left: 25%;
+}
+#cloud.four {
+  width: 10vw;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  top: 95%;
+  right: 2%;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: nowrap;
+  height: 100%;
+  width: 90%;
+  margin: 5%;
+  position: relative;
+  z-index: 5;
+}
+.left-col {
+  flex: 1 1 35%;
+  align-self: center;
+}
+.right-col {
+  flex: 2 1 50%;
+  align-self: stretch;
+}
+
+.logo img {
+  width: 80%;
+}
+
+h1 {
+  font-size: 3.2em;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+h1 span {
+  font-weight: 400;
+  text-transform: uppercase;
+  display: block;
+}
+
+#join {
+  width: 100%;
+  line-height: 1.5em;
+}
+#agree {
+  margin: 1.5vh;
+  position: relative;
+  bottom: 1.5vh;
+}
+form label.agree-checkbox {
+  font-size: 2.8vmin;
+  line-height: 1;
+  width: 80%;
+  display: inline-block;
+}
+
+.button {
+  background-color: #1f3864;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  display: block;
+  margin: 2em 0.5em;
+  padding: 0.7em 0.5em;
+  width: 85%;
+  text-align: center;
+  font-size: 1.5em;
+  border: none;
+}
+.button:hover {
+  filter: opacity(85%);
+}
+
+#join p {
+  font-size: 2.8vmin;
+  line-height: 1.2;
+  margin: 10% 0;
+  max-width: 90%;
+}
+
+#join a {
+  color: #445468;
+}
+#join form {
+  margin-top: 5%;
+}
+
+.terms {
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+  z-index: 5;
+}
+.terms .scroll-box {
+  height: 50%;
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+  border: 1px solid #ccc;
+  padding: 1.5em 1.2em;
+  margin: 2vh auto 0;
+  background-color: #e7e7e7;
+  text-align: left;
+  box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.09) inset;
+  -webkit-box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.09) inset;
+  -moz-box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.09) inset;
+}
+iframe > html {
+  overflow-wrap: break-word;
+}
+
+
+
+@media (min-width: 370px) {
+  #content {
+    height: 100vh;
+  }
+  #container {
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    width: 85%;
+    top: 30%;
+  }
+  #join p {
+    margin: 3% 0;
+    max-width: 100%;
+    font-size: 1.6em;
+  }
+  #background > .wifi-icon {
+    width: 100%;
+    margin: 5% auto;
+    left: 0;
+    height: 20%;
+  }
+  #cloud {
+    height: 30%;
+    width: 30%;
+  }
+  #cloud.one {
+    left: 14%;
+    top: 6%;
+  }
+  #cloud.two {
+    right: 9%;
+    top: 0%;
+  }
+  #cloud.four {
+    width: 20%;
+    top: 35%;
+    right: 8%;
+  }
+  h1 {
+    font-size: 3em;
+    display: table-cell;
+    margin: 0 auto;
+  }
+  .left-col {
+    flex: 1 1 100%;
+  }
+  .button {
+    width: 100%;
+    margin: 10% auto;
+    font-size: 2em;
+    padding: 8px 4px;
+  }
+  form label.agree-checkbox {
+    width: 85%;
+    font-size: 1.8em;
+  }
+  .right-col {
+    align-self: flex-end;
+    width: 100%;
+  }
+  .terms {
+    top: 0;
+    width: 100%;
+    height: 20%;
+  }
+  .terms .scroll-box {
+    height: 200px;
+    width: 90%;
+  }
+}
+
+
+
+
+@media (min-width: 550px) {
+  #container {
+    flex-direction: column;
+    top: 35%;
+  }
+  #join p {
+    margin: 5% 0;
+    max-width: 100%;
+    font-size: 1.6em;
+  }
+  #background > .wifi-icon {
+    width: 100%;
+    margin: 0 auto;
+    left: 0;
+    top: 5%;
+    height: 25%;
+  }
+  #cloud {
+    height: 30%;
+    width: 30%;
+  }
+  #cloud.one {
+    left: 7%;
+    top: 6%;
+  }
+  #cloud.two {
+    right: 7%;
+    top: 0%;
+  }
+  #cloud.three {
+    top: 70%;
+  }
+  #cloud.four {
+    width: 20%;
+    top: 20%;
+    right: 8%;
+  }
+  h1 {
+    font-size: 3.5em;
+  }
+  h1 span {
+    display: inline;
+  }
+  .left-col {
+    flex: 2 1 50%;
+  }
+  .right-col {
+    flex: 1 1 40%;
+  }
+  .logo img {
+    width: 60%;
+  }
+  .terms {
+    top: 0;
+    width: 100%;
+  }
+  .terms .scroll-box {
+    height: 200px;
+    width: 90%;
+  }
+}
+
+
+
+
+@media (min-width: 730px) {
+  #content {
+    height: 90vh;
+  }
+  #container {
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 5vh auto;
+    width: 90%;
+    top: 10%;
+  }
+  #background > .wifi-icon {
+    margin: 0 auto;
+    left: 40%;
+    top: 25%;
+    width: 40%;
+    height: 40%;
+  }
+
+  .left-col {
+    flex: 1 1 40%;
+    align-self: center;
+  }
+  h1 {
+    font-size: 3.4em;
+  }
+  h1 span {
+    display: inline-block;
+  }
+  #join {
+    max-width: 330px;
+    margin: 0 auto;
+  }
+  .right-col {
+    flex: 2 1 50%;
+    align-self: stretch;
+  }
+  #background > .wifi-icon {
+    margin: 0 auto;
+    left: 46%;
+    top: 29%;
+    width: 50%;
+    height: 50%;
+  }
+  #cloud {
+    width: 20%;
+    height: 20%;
+  }
+  #cloud.one {
+    left: 45%;
+    top: 0px;
+  }
+  #cloud.two {
+    right: 2%;
+    top: 10%;
+  }
+  #cloud.three {
+    width: 30%;
+    top: 85%;
+    left: 40%;
+  }
+  #cloud.four {
+    width: 10vw;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    top: 95%;
+    right: 2%;
+  }
+  .button {
+    padding: 0.3em 0.3em;
+    margin: 1em 0;
+    width: 90%;
+    text-align: center;
+    font-size: 1.6em;
+  }
+  form label.agree-checkbox {
+    font-size: 1.5em;
+    line-height: 1;
+    width: 80%;
+    display: inline-block;
+  }
+  .terms {
+    width: 100%;
+    margin: 5% 0;
+  }
+  .terms .scroll-box {
+    height: 10em;
+  }
+}
+
+
+
+
+@media (max-width: 400px) {
+  #container {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  #container {
+    flex-direction: column;
+    width: 90%;
+    top: 20%;
+  }
+  h1 {
+    margin: 0 auto;
+  }
+  #join p {
+    margin: 3% 0;
+    max-width: 100%;
+    font-size: 1.6em;
+  }
+  .left-col {
+    flex: 1 1 100%;
+  }
+  #background > .wifi-icon {
+    width: 100%;
+    margin: 0 auto;
+    left: 0;
+    top: 0%;
+    height: 18%;
+  }
+  #cloud {
+    height: 30%;
+    width: 30%;
+  }
+  #cloud.one {
+    left: 14%;
+    top: 6%;
+  }
+  #cloud.two {
+    right: 9%;
+    top: 0%;
+  }
+  .right-col {
+    flex: 1 1 100%;
+    align-self: center;
+  }
+  .terms {
+    width: 100%;
+    margin: 5% auto;
+  }
+  .terms .scroll-box {
+    height: 150px;
+  }
+  .button {
+    width: 100%;
+    margin: 10% auto;
+    font-size: 2em;
+    padding: 8px 4px;
+  }
+}
