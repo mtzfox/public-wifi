@@ -149,7 +149,7 @@ form label.agree-checkbox {
   filter: opacity(85%);
 }
 
-#join p {
+#join > p {
   font-size: 2.8vmin;
   line-height: 1.2;
   margin: 10% 0;
@@ -182,10 +182,11 @@ form label.agree-checkbox {
   border: 1px solid #ccc;
 }
 #terms .scroll-box {
-  font-size: 0.6em;
-  font-family: Arial, Helvetica, sans-serif;
-  line-height: 2em;
-}
+  font-size: 0.8em;
+  color: #2f3237;
+} 
+
+
 
 
 
@@ -200,7 +201,7 @@ form label.agree-checkbox {
     width: 85%;
     top: 30%;
   }
-  #join p {
+  #join > p {
     margin: 3% 0;
     max-width: 100%;
     font-size: 1.6em;
@@ -265,7 +266,7 @@ form label.agree-checkbox {
     flex-direction: column;
     top: 35%;
   }
-  #join p {
+  #join > p {
     margin: 5% 0;
     max-width: 100%;
     font-size: 1.6em;
@@ -427,7 +428,7 @@ form label.agree-checkbox {
   h1 {
     margin: 0 auto;
   }
-  #join p {
+  #join > p {
     margin: 3% 0;
     max-width: 100%;
     font-size: 1.6em;
